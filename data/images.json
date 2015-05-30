@@ -1,261 +1,430 @@
-[
-    {
-        "src": "0.jpg",
-        "parts": ["te", "destruye","la"]
-    },
-    {
-        "src": "1.jpg",
-        "parts": ["libertat"]
-    },
-    {
-        "src": "2.jpg",
-        "parts": ["locals"]
-    },
-    {
-        "src": "3.jpg",
-        "parts": ["bocadillos", "galletas", "naturales", "zumos", "en"]
-    },
-    {
-        "src": "4.jpg",
-        "parts": ["estetica", "i", "imatge", "logia", "tatoo"]
-    },
-    {
-        "src": "5.jpg",
-        "parts": ["head"]
-    },
-   {
-        "src": "6.jpg",
-        "parts": ["cap-girem"]
-    },
-    {
-        "src": "7.jpg",
-        "parts": ["festival", "summer"]
-    },
-    {
-        "src": "10.jpg",
-        "parts": ["aeroport", "come", "yo", "al", "el"]
-    },
-    {
-        "src": "11.jpg",
-        "parts": ["buen", "viaje", "en", "no", "un"]
-    },
-    {
-        "src": "12.jpg",
-        "parts": ["preparats"]
-    },
-    {
-        "src": "13.jpg",
-        "parts": ["a", "voy"]
-    },
-    {
-        "src": "14.jpg",
-        "parts": ["fondo", "tren"]
-    },
-    {
-        "src": "15.jpg",
-        "parts": ["la", "mirada", "silencio", "en", "el", "mi"]
-    },
-    {
-        "src": "16.jpg",
-        "parts": ["bar", "catedra", "restaurant", "la"]
-    },
-    {
-        "src": "19.jpg",
-        "parts": ["super"]
-    },
-    {
-        "src": "20.jpg",
-        "parts": ["vanguardia", "la"]
-    },
-    {
-        "src": "21.jpg",
-        "parts": ["croissant", "el", "a", "o"]
-    },
-    {
-        "src": "22.jpg",
-        "parts": ["lliure", "pictograma"]
-    },
-    {
-        "src": "23.jpg",
-        "parts": ["casa", "del"]
-    },
-    {
-        "src": "24.jpg",
-        "parts": ["run"]
-    },
-    {
-        "src": "25.jpg",
-        "parts": ["breakfast", "en"]
-    },
-    {
-        "src": "26.jpg",
-        "parts": ["ciudad", "tambien", "que", "se", "una"]
-    },
-    {
-        "src": "27.jpg",
-        "parts": ["cafe"]
-    },
-    {
-        "src": "28.jpg",
-        "parts": ["raval", "absenta"]
-    },
-    {
-        "src": "29.jpg",
-        "parts": ["pizzeria"]
-    },
-    {
-        "src": "30.jpg",
-        "parts": ["bruja", "la"]
-    },
-    {
-        "src": "45.jpg",
-        "parts": ["robos", "actos", "de", "la", "los", "on", "si"]
-    },
-   {
-        "src": "46.jpg",
-        "parts": ["huelga", "el"]
-    },
-       {
-        "src": "47.jpg",
-        "parts": ["esclatitza"]
-    },
-       {
-        "src": "48.jpg",
-        "parts": ["world", "de", "la", "les"]
-    },
-       {
-        "src": "49.jpg",
-        "parts": ["residus"]
-    },
-       {
-        "src": "50.jpg",
-        "parts": ["vivir"]
-    },
-       {
-        "src": "51.jpg",
-        "parts": ["eres", "hacer","no", "sin"]
-    },
-       {
-        "src": "52.jpg",
-        "parts": ["i", "ser", "el", "la"]
-    },
-
-       {
-        "src": "53.jpg",
-        "parts": ["@", "xino"]
-    },
-       {
-        "src": "54.jpg",
-        "parts": ["mezquita-arabe"]
-    },
-     {
-        "src": "55.jpg",
-        "parts": ["elaleman"]
-    },
-       {
-        "src": "61.jpg",
-        "parts": ["crisis", "hay"]
-    },
-       {
-        "src": "62.jpg",
-        "parts": ["al", "la"]
-    },
-       {
-        "src": "63.jpg",
-        "parts": ["independencia"]
-    },
-       {
-        "src": "64.jpg",
-        "parts": ["llogat", "al"]
-    },
-       {
-        "src": "65.jpg",
-        "parts": ["money"]
-    },
-       {
-        "src": "66.jpg",
-        "parts": ["ring"]
-    },
-       {
-        "src": "67.jpg",
-        "parts": ["sobornos", "y"]
-    },
-       {
-        "src": "68.jpg",
-        "parts": ["banco", "de","espanya"]
-    },
-       {
-        "src": "35.jpg",
-        "parts": ["antifeixista", "chorizo","complicitat", "de", "el", "la", "les"]
-    },
-       {
-        "src": "36.jpg",
-        "parts": ["forn", "de"]
-    },
-       {
-        "src": "37.jpg",
-        "parts": ["superstar"]
-    },
-       {
-        "src": "38.jpg",
-        "parts": ["griego"]
-    },
-       {
-        "src": "39.jpg",
-        "parts": ["peixateria", "i"]
-    },
-       {
-        "src": "40.jpg",
-        "parts": ["aquesta", "vaneixer", "serrat", "del", "en"]
-    },
-       {
-        "src": "41.jpg",
-        "parts": ["reformant", "de", "el"]
-    },
-       {
-        "src": "42.jpg",
-        "parts": ["hotel", "el"]
-    },
-         {
-        "src": "43.jpg",
-        "parts": ["de", "libertad"]
-    },
-        {
-        "src": "44.jpg",
-        "parts": ["pep"]
-    },
-            {
-        "src": "56.jpg",
-        "parts": ["arabe", "perruqueria"]
-    },
-            {
-        "src": "57.jpg",
-        "parts": ["the"]
-    },
-            {
-        "src": "58.jpg",
-        "parts": ["verdures", "es", "i"]
-    },
-
-            {
-        "src": "60.jpg",
-        "parts": ["hostal"]
-    },
-
-            {
-        "src": "69.jpg",
-        "parts": ["clar"]
-    },
-            {
-        "src": "70.jpg",
-        "parts": ["rouge"]
-    },
-            {
-        "src": "71.jpg",
-        "parts": ["teatre", "universitat"]
-    },
-            {
-        "src": "72.jpg",
-        "parts": ["autentic"]
-    }
-]
+[{
+    "src": "0.jpg",
+    "parts": [
+        "te",
+        "destruye",
+        "la"
+    ]
+}, {
+    "src": "1.jpg",
+    "parts": [
+        "libertat"
+    ]
+}, {
+    "src": "2.jpg",
+    "parts": [
+        "locals"
+    ]
+}, {
+    "src": "3.jpg",
+    "parts": [
+        "bocadillos",
+        "galletas",
+        "naturales",
+        "zumos",
+        "en"
+    ]
+}, {
+    "src": "4.jpg",
+    "parts": [
+        "estetica",
+        "i",
+        "imatge",
+        "logia",
+        "tatoo"
+    ]
+}, {
+    "src": "5.jpg",
+    "parts": [
+        "head"
+    ]
+}, {
+    "src": "6.jpg",
+    "parts": [
+        "cap-girem"
+    ]
+}, {
+    "src": "7.jpg",
+    "parts": [
+        "festival",
+        "summer"
+    ]
+}, {
+    "src": "10.jpg",
+    "parts": [
+        "aeroport",
+        "come",
+        "yo",
+        "al",
+        "el"
+    ]
+}, {
+    "src": "11.jpg",
+    "parts": [
+        "buen",
+        "viaje",
+        "en",
+        "no",
+        "un"
+    ]
+}, {
+    "src": "12.jpg",
+    "parts": [
+        "preparats",
+        "arriba",
+        "fem"
+    ]
+}, {
+    "src": "13.jpg",
+    "parts": [
+        "a",
+        "voy"
+    ]
+}, {
+    "src": "14.jpg",
+    "parts": [
+        "fondo",
+        "tren"
+    ]
+}, {
+    "src": "15.jpg",
+    "parts": [
+        "la",
+        "mirada",
+        "silencio",
+        "en",
+        "el",
+        "mi"
+    ]
+}, {
+    "src": "16.jpg",
+    "parts": [
+        "bar",
+        "catedra",
+        "restaurant",
+        "la",
+        "discover"
+    ]
+}, {
+    "src": "19.jpg",
+    "parts": [
+        "super"
+    ]
+}, {
+    "src": "20.jpg",
+    "parts": [
+        "vanguardia",
+        "la",
+        "recarga"
+    ]
+}, {
+    "src": "21.jpg",
+    "parts": [
+        "croissant",
+        "el",
+        "a",
+        "o"
+    ]
+}, {
+    "src": "22.jpg",
+    "parts": [
+        "lliure",
+        "pictograma"
+    ]
+}, {
+    "src": "23.jpg",
+    "parts": [
+        "casa",
+        "del"
+    ]
+}, {
+    "src": "24.jpg",
+    "parts": [
+        "run"
+    ]
+}, {
+    "src": "25.jpg",
+    "parts": [
+        "breakfast",
+        "en"
+    ]
+}, {
+    "src": "26.jpg",
+    "parts": [
+        "ciudad",
+        "tambien",
+        "que",
+        "se",
+        "una",
+        "abrirse",
+        "construyeron",
+        "usadas"
+    ]
+}, {
+    "src": "27.jpg",
+    "parts": [
+        "cafe"
+    ]
+}, {
+    "src": "28.jpg",
+    "parts": [
+        "raval",
+        "absenta",
+        "sent"
+    ]
+}, {
+    "src": "29.jpg",
+    "parts": [
+        "pizzeria"
+    ]
+}, {
+    "src": "30.jpg",
+    "parts": [
+        "bruja",
+        "la"
+    ]
+}, {
+    "src": "45.jpg",
+    "parts": [
+        "robos",
+        "actos",
+        "de",
+        "la",
+        "los",
+        "on",
+        "si"
+    ]
+}, {
+    "src": "46.jpg",
+    "parts": [
+        "huelga",
+        "el"
+    ]
+}, {
+    "src": "47.jpg",
+    "parts": [
+        "esclatitza"
+    ]
+}, {
+    "src": "48.jpg",
+    "parts": [
+        "world",
+        "de",
+        "la",
+        "les",
+        "ayudanos",
+        "resistir"
+    ]
+}, {
+    "src": "49.jpg",
+    "parts": [
+        "residus"
+    ]
+}, {
+    "src": "50.jpg",
+    "parts": [
+        "vivir"
+    ]
+}, {
+    "src": "51.jpg",
+    "parts": [
+        "eres",
+        "hacer",
+        "no",
+        "sin"
+    ]
+}, {
+    "src": "52.jpg",
+    "parts": [
+        "i",
+        "ser",
+        "el",
+        "la"
+    ]
+}, {
+    "src": "53.jpg",
+    "parts": [
+        "@",
+        "xino"
+    ]
+}, {
+    "src": "54.jpg",
+    "parts": [
+        "mezquita-arabe"
+    ]
+}, {
+    "src": "55.jpg",
+    "parts": [
+        "elaleman"
+    ]
+}, {
+    "src": "61.jpg",
+    "parts": [
+        "crisis",
+        "hay"
+    ]
+}, {
+    "src": "62.jpg",
+    "parts": [
+        "al",
+        "la"
+    ]
+}, {
+    "src": "63.jpg",
+    "parts": [
+        "independencia",
+        "amb",
+        "desnonaments",
+        "entrem",
+        "stop"
+    ]
+}, {
+    "src": "64.jpg",
+    "parts": [
+        "llogat",
+        "al"
+    ]
+}, {
+    "src": "65.jpg",
+    "parts": [
+        "money"
+    ]
+}, {
+    "src": "66.jpg",
+    "parts": [
+        "ring"
+    ]
+}, {
+    "src": "67.jpg",
+    "parts": [
+        "sobornos",
+        "y",
+        "denunciar",
+        "trabajar"
+    ]
+}, {
+    "src": "68.jpg",
+    "parts": [
+        "banco",
+        "de",
+        "espanya"
+    ]
+}, {
+    "src": "35.jpg",
+    "parts": [
+        "antifeixista",
+        "chorizo",
+        "complicitat",
+        "de",
+        "el",
+        "la",
+        "les",
+        "mata",
+        "retallar",
+        "som"
+    ]
+}, {
+    "src": "36.jpg",
+    "parts": [
+        "forn",
+        "de"
+    ]
+}, {
+    "src": "37.jpg",
+    "parts": [
+        "superstar"
+    ]
+}, {
+    "src": "38.jpg",
+    "parts": [
+        "griego"
+    ]
+}, {
+    "src": "39.jpg",
+    "parts": [
+        "peixateria",
+        "i"
+    ]
+}, {
+    "src": "40.jpg",
+    "parts": [
+        "aquesta",
+        "vaneixer",
+        "serrat",
+        "del",
+        "en",
+        "ser"
+    ]
+}, {
+    "src": "41.jpg",
+    "parts": [
+        "reformant",
+        "de",
+        "el",
+        "estem"
+    ]
+}, {
+    "src": "42.jpg",
+    "parts": [
+        "hotel",
+        "el",
+        "sal"
+    ]
+}, {
+    "src": "43.jpg",
+    "parts": [
+        "de",
+        "libertad"
+    ]
+}, {
+    "src": "44.jpg",
+    "parts": [
+        "pep"
+    ]
+}, {
+    "src": "56.jpg",
+    "parts": [
+        "arabe",
+        "perruqueria",
+        "quería"
+    ]
+}, {
+    "src": "57.jpg",
+    "parts": [
+        "the"
+    ]
+}, {
+    "src": "58.jpg",
+    "parts": [
+        "verdures",
+        "es",
+        "i",
+        "molon"
+    ]
+}, {
+    "src": "60.jpg",
+    "parts": [
+        "hostal"
+    ]
+}, {
+    "src": "69.jpg",
+    "parts": [
+        "clar"
+    ]
+}, {
+    "src": "70.jpg",
+    "parts": [
+        "rouge"
+    ]
+}, {
+    "src": "71.jpg",
+    "parts": [
+        "teatre",
+        "universitat"
+    ]
+}, {
+    "src": "72.jpg",
+    "parts": [
+        "autentic"
+    ]
+}]
