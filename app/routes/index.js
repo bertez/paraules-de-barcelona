@@ -6,13 +6,13 @@ var routeManager = function(env) {
     var router = express.Router();
 
     var controllers = require('../controllers');
-
     /**
      * Initial middleware
      */
 
     router.use(function(req, res, next) {
        res.locals.app = 'Example web';
+       next();
     });
 
     /**

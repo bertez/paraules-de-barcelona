@@ -5,7 +5,6 @@ require.config({
          * Components
          */
         'jquery': '../vendor/jquery/dist/jquery',
-        'bootstrap': '../vendor/bootstrap-sass/assets/javascripts/bootstrap',
         /**
          * Modules
          */
@@ -22,6 +21,6 @@ require.config({
     }
 });
 
-require(['jquery', 'bootstrap', 'shared'], function() {
+require(['jquery', 'shared'], function() {
     console.log('hello from main');
 });

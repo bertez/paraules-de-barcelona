@@ -1,6 +1,5 @@
 var settings = require('../../config/settings');
 var helpers = require('../lib/helpers');
-var orm = require('orm');
 
 
 module.exports = {
