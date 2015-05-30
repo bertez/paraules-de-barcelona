@@ -8,12 +8,20 @@ require(['jquery', 'game', 'magnets', 'helpers'], function($, game, magnets, hel
     var quotesInterval;
 
     var $audio = $('audio');
-
-
     $audio.get(0).volume = 0.4;
+
+    var $video = $('video');
+    $video.on('timeupdate', function() {
+        var video = $video.get(0);
+
+        if (video.currentTime > 9) {
+            video.currentTime = 1;
+        }
+    });
 
     $('.ui-start .next').on('click', function() {
         $start.fadeOut(function() {
+            $start.remove();
             $intro.fadeIn();
 
             var $quotes = $('.ui-intro .quotes span'),
@@ -42,6 +50,7 @@ require(['jquery', 'game', 'magnets', 'helpers'], function($, game, magnets, hel
     $('.ui-intro .next').on('click', function() {
         clearTimeout(quotesInterval);
         $intro.fadeOut(function() {
+            $intro.remove();
             $game.fadeIn(function() {
 
                 //Init game
@@ -64,15 +73,18 @@ require(['jquery', 'game', 'magnets', 'helpers'], function($, game, magnets, hel
                             img: 'bcn_150px.png',
                             main: 1
                         });
-
-                        $game.fadeOut(function() {
-                            magnets.init({
-                                data: pieces,
-                                $element: $magnets,
-                                $end: $end,
-                                edit: true
+                        setTimeout(function() {
+                            $game.fadeOut(function() {
+                                $game.remove();
+                                magnets.init({
+                                    data: pieces,
+                                    $element: $magnets,
+                                    $end: $end,
+                                    edit: true
+                                });
                             });
-                        });
+
+                        }, 2000);
                     }
                 });
             });
