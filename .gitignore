@@ -4,3 +4,4 @@ config/local.settings.js
 static/src/vendor
 static/dist
 .sass-cache
+logs

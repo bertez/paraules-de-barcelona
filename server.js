@@ -10,7 +10,10 @@ var express = require('express'),
 module.exports.startServer = function() {
     var app = express();
 
-    app.set('port', process.env.port || 3000);
+    //var port = process.env.PORT || 3000;
+    var port = process.env.PORT || 3002;
+
+    app.set('port', port);
 
     environment(app);
 
@@ -18,7 +21,7 @@ module.exports.startServer = function() {
      * Server
      */
 
-    var server = app.listen(3000, function() {
+    var server = app.listen(port, function() {
         console.log('App running at %s', app.get('port'));
     });
 };
