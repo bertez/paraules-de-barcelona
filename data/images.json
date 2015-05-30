@@ -1,0 +1,56 @@
+[
+    {
+        "src": "1.jpg",
+        "parts": [
+            {
+                "img": "1_1.jpg",
+                "type": "article"
+            }
+        ]
+    },
+    {
+        "src": "2.jpg",
+        "parts": [
+            {
+                "img": "1_2.jpg",
+                "type": "noun"
+            }
+        ]
+    },
+    {
+        "src": "3.jpg",
+        "parts": [
+            {
+                "img": "1_3.jpg",
+                "type": "verb"
+            }
+        ]
+    },
+    {
+        "src": "4.jpg",
+        "parts": [
+            {
+                "img": "1_4.jpg",
+                "type": "verb"
+            }
+        ]
+    },
+    {
+        "src": "5.jpg",
+        "parts": [
+            {
+                "img": "1_5.jpg",
+                "type": "preposition"
+            }
+        ]
+    },
+   {
+        "src": "6.jpg",
+        "parts": [
+            {
+                "img": "1_6.jpg",
+                "type": "article"
+            }
+        ]
+    }
+]

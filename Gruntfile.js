@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
     "use strict";
 
@@ -87,7 +88,7 @@ module.exports = function(grunt) {
         },
         watch: {
             express: {
-                files: ['<%= jshint.app.src %>', '**/*.hbs', '!Gruntfile.js', '!**/static/**'],
+                files: ['<%= jshint.app.src %>', '**/*.hbs', 'data/**', '!Gruntfile.js', '!**/static/**'],
                 tasks: ['express:dev'],
                 options: {
                     spawn: false
@@ -108,7 +109,7 @@ module.exports = function(grunt) {
                     'static/src/**/*.js'
                 ],
                 tasks: ['sync', 'concat']
-            }
+            },
         },
         notify_hooks: {
             options: {

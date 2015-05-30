@@ -1,6 +1,7 @@
 require.config({
     baseUrl: 'js',
     paths: {
+        'config': 'config',
         /**
          * Components
          */
@@ -9,18 +10,25 @@ require.config({
          * Modules
          */
         'shared': 'modules/shared',
+        'game': 'modules/game',
+        'magnets': 'modules/magnets',
         /**
          * Apps
          */
-        'index': 'app/index'
+        'main': 'app/index',
+        'single': 'app/single'
     },
     shim: {
-        "bootstrap": {
-            "deps": ['jquery']
-        }
     }
 });
 
 require(['jquery', 'shared'], function() {
-    console.log('hello from main');
+
+    //Start
+    var startModuleName = $('script[data-start]').attr('data-start');
+
+    if (startModuleName) {
+        require([startModuleName]);
+    }
+
 });

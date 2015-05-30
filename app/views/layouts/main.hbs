@@ -8,23 +8,11 @@
 </head>
 <body>
 
-<header>
-    {{#if flash}}
-    <div class="alert alert-{{flash.level}}">
-        <button class="close" data-dismiss="alert">×</button>
-        {{{flash.message}}}
-    </div>
-    {{/if}}
+{{> header}}
 
-    <h1>{{app}}</h1>
-
-    {{> nav }}
-
-</header>
-
-<section class="container">
 {{{ body }}}
-</section>
+
+{{> footer }}
 
 <script data-main="{{jsApp}}" src="/js/main.js" type="text/javascript"></script>
 </body>

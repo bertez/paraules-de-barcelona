@@ -11,7 +11,7 @@ var routeManager = function(env) {
      */
 
     router.use(function(req, res, next) {
-       res.locals.app = 'Example web';
+       res.locals.app = 'Paraules de Barcelona';
        next();
     });
 
@@ -19,11 +19,20 @@ var routeManager = function(env) {
      * Routes
      */
 
-    // Index
+    // Main
     router.get('/', controllers.index);
+    router.post('/', controllers.create);
 
-    // Help
-    router.get('/help', controllers.help);
+    // Single
+    router.get('/s/:id', controllers.get);
+
+    //JSON Static
+    var data = require('../../data');
+    Object.keys(data).forEach(function(d) {
+        router.get('/data/' + d + '.json', function(req, res) {
+            res.json(data[d]);
+        });
+    });
 
     /**
      * Catchers
