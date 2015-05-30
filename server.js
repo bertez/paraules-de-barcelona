@@ -11,7 +11,7 @@ module.exports.startServer = function() {
     var app = express();
 
     //var port = process.env.PORT || 3000;
-    var port = process.env.PORT || 3002;
+    var port = 3002;
 
     app.set('port', port);
 
