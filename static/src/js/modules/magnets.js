@@ -169,7 +169,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
             .done(function(data) {
                 var url =  window.location + 's/' + data.id;
 
-                var twitter_share = 'https://twitter.com/home?status=Check out my City Symphony ';
+                var twitter_share = 'https://twitter.com/home?status=Check out these Paraules from Barcelona ';
                 var facebook_share = 'https://www.facebook.com/sharer/sharer.php?u=';
 
 

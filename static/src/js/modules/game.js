@@ -110,7 +110,7 @@ define(['jquery', 'helpers', 'settings'], function($, helpers, settings) {
                 if(!$current.length) {
                     $current = $images.eq(0);
                 }
-            }, 2000);
+            }, 1000);
         },
         finish: function() {
             this.$pictures.fadeOut();
