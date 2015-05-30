@@ -1,7 +1,9 @@
-
 @import "../vendor/normalize-scss/normalize";
+@import "../vendor/font-awesome/scss/font-awesome";
+
 @import "variables";
 @import "common";
 
 
-@import "pages/index";
+@import "pages/main";
+@import "pages/single";

@@ -1,6 +1,7 @@
 var environment = require('./config/environment');
 
-var express = require('express');
+var express = require('express'),
+    db = require('./app/models/db');
 
 /**
  * Server module

@@ -24,7 +24,8 @@ var routeManager = function(env) {
     router.post('/', controllers.create);
 
     // Single
-    router.get('/s/:id', controllers.get);
+    router.get('/s/:id', controllers.share);
+    router.get('/get/:id', controllers.get);
 
     //JSON Static
     var data = require('../../data');

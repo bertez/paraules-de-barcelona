@@ -11,6 +11,18 @@ module.exports = function(grunt) {
                 cwd: 'static/src/img/',
                 src: ['**'],
                 dest: 'static/dist/img/'
+            },
+            fonts: {
+                expand: true,
+                cwd: 'static/src/vendor/font-awesome/fonts/',
+                src: ['**'],
+                dest: 'static/dist/fonts/'
+            },
+            media: {
+                expand: true,
+                cwd: 'static/src/media/',
+                src: ['**'],
+                dest: 'static/dist/media/'
             }
         },
         sync: {
@@ -131,7 +143,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sync');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('dev', ['jshint', 'clean', 'sass', 'sync', 'concat', 'express', 'watch']);
+    grunt.registerTask('dev', ['jshint', 'clean', 'copy', 'sass', 'sync', 'concat', 'express', 'watch']);
     grunt.registerTask('default', ['jshint', 'clean', 'sass', 'copy', 'requirejs']);
 
 };

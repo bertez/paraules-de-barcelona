@@ -13,4 +13,4 @@ var config = {
     }
 };
 
-module.exports = config;
+module.exports = fs.existsSync(path.join(__dirname, 'local.settings.js')) ? require(path.join(__dirname, 'local.settings.js')) : config;

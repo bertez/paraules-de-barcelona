@@ -1,0 +1,146 @@
+body {
+    font-family: 'Lora', sans-serif;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.rotate_1 {
+    -moz-transform:rotate(3deg);
+     -webkit-transform:rotate(3deg);
+}
+
+.rotate_2 {
+    -moz-transform:rotate(6deg);
+     -webkit-transform:rotate(6deg);
+}
+
+.rotate_3 {
+    -moz-transform:rotate(6deg);
+     -webkit-transform:rotate(6deg);
+}
+
+.rotate_4 {
+    -moz-transform:rotate(10deg);
+     -webkit-transform:rotate(10deg);
+}
+
+.rotate_5 {
+    -moz-transform:rotate(0deg);
+     -webkit-transform:rotate(0deg);
+}
+
+.rotate_5 {
+    -moz-transform:rotate(-1deg);
+     -webkit-transform:rotate(-1deg);
+}
+
+.rotate_6 {
+    -moz-transform:rotate(-3deg);
+     -webkit-transform:rotate(-3deg);
+}
+
+.rotate_7 {
+    -moz-transform:rotate(-5deg);
+     -webkit-transform:rotate(-5deg);
+}
+
+.rotate_8 {
+    -moz-transform:rotate(-8deg);
+     -webkit-transform:rotate(-8deg);
+}
+
+.rotate_9 {
+    -moz-transform:rotate(-10deg);
+     -webkit-transform:rotate(-10deg);
+}
+
+.rotate_10 {
+    -moz-transform:rotate(1deg);
+     -webkit-transform:rotate(1deg);
+}
+
+.panel {
+    .t {
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+
+        bottom: 60px;
+
+        text-shadow: 2px 2px 0px black;
+    }
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .bg {
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+}
+
+.magnets {
+    .magnet {
+        position: absolute !important;
+        box-shadow: 3px 3px 2px black;
+    }
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button {
+    border: none;
+    font-size: 1.3em;
+    background: white;
+    color: black;
+    padding: 24px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+header {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background: black;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: .7em;
+    font-family: 'Montserrat', sans-serif;
+
+    p {
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        width: 50%;
+    }
+
+
+    a {
+        color: white;
+    }
+}
