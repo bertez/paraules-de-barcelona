@@ -68,18 +68,23 @@
     .magnets {
         background-size: cover;
 
+        .info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
         .ui {
             position: absolute;
         }
 
         .share {
             bottom: 100px;
-            right: 20px;
+            right: 40px;
         }
 
         .backgrounds {
             bottom: 100px;
-            left: 20px;
+            left: 40px;
 
             img {
                 width: 54px;

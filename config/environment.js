@@ -85,7 +85,7 @@ module.exports = function(app) {
      * Favicon
      */
 
-    app.use(favicon(path.join(settings.path, 'static', 'favicon.ico')));
+    app.use(favicon(path.join(settings.path, 'static', 'src/share/favicon.ico')));
 
 
     /**

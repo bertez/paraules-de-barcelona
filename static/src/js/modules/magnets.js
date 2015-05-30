@@ -81,6 +81,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     .attr('src', settings.paths.parts + magnet.img)
                     .data('original', magnet.original)
                     .data('img', magnet.img)
+                    .data('main', magnet.main || false)
                     .addClass('magnet');
 
                 if(!magnet.position) {
@@ -113,6 +114,10 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     });
                 }
 
+                if(magnet.main) {
+                    $magnet.css('box-shadow', 'none');
+                }
+
 
                 $magnet.appendTo(self.$element);
             });
@@ -140,6 +145,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     top: (position.top / self.dimensions.height) * 100,
                     left: (position.left / self.dimensions.width) * 100
                 };
+                part.main = $this.data('main');
 
                 result.push(part);
 

@@ -23,7 +23,14 @@ module.exports = function(grunt) {
                 cwd: 'static/src/media/',
                 src: ['**'],
                 dest: 'static/dist/media/'
+            },
+            share: {
+                expand: true,
+                cwd: 'static/src/share/',
+                src: ['**'],
+                dest: 'static/dist/share/'
             }
+
         },
         sync: {
             js: {

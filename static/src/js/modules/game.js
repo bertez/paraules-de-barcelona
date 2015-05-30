@@ -91,9 +91,9 @@ define(['jquery', 'helpers', 'settings'], function($, helpers, settings) {
                 $current,
                 self = this;
 
+            var $allImages = self.$pictures.find('img');
 
             this.interval = setInterval(function() {
-                var $allImages = self.$pictures.find('img');
 
                 var $images = $allImages.not('.ui-selected');
 
@@ -110,7 +110,7 @@ define(['jquery', 'helpers', 'settings'], function($, helpers, settings) {
                 if(!$current.length) {
                     $current = $images.eq(0);
                 }
-            }, 1000);
+            }, 2000);
         },
         finish: function() {
             this.$pictures.fadeOut();
