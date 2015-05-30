@@ -6,7 +6,7 @@ var itemd = require('../models/items');
 module.exports = {
     index: function(req, res, next) {
         res.render('home', {
-            page: 'main',
+            page: 'index',
             meta: {
                 title: 'Paraules de Barcelona'
             }

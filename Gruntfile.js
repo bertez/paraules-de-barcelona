@@ -82,12 +82,21 @@ module.exports = function(grunt) {
                 options: {
                     baseUrl: './static/src/js/',
                     mainConfigFile: './static/src/js/main.js',
-                    dir: './static/dist/js',
+                    dir: './static/dist/js/',
                     removeCombined: true,
                     modules: [{
                         name: 'main',
                         include: ['../../src/vendor/requirejs/require.js']
-                    }]
+                    },
+                    {
+                        name: 'app/single',
+                        exclude: ['main']
+                    },
+                    {
+                        name: 'app/index',
+                        exclude: ['main']
+                    }
+                    ]
                 }
             }
         },

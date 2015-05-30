@@ -14,11 +14,6 @@ require.config({
         'game': 'modules/game',
         'magnets': 'modules/magnets',
         'helpers': 'modules/helpers',
-        /**
-         * Apps
-         */
-        'main': 'app/index',
-        'single': 'app/single'
     },
     shim: {
         'jquery-ui': {
@@ -32,8 +27,9 @@ require(['jquery'], function() {
     //Start
     var startModuleName = $('script[data-start]').attr('data-start');
 
+
     if (startModuleName) {
-        require([startModuleName]);
+        require(['app/' + startModuleName]);
     }
 
 });
