@@ -8,7 +8,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
 
             this.$element = config.$element;
 
-            if(config.edit) {
+            if (config.edit) {
                 this.$share = config.$element.find('.ui-share');
                 this.$backgrounds = config.$element.find('.ui-backgrounds');
                 this.$end = config.$end;
@@ -24,16 +24,16 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                 });
 
                 $.ajax({
-                    url: settings.backgrounds,
-                    method: 'GET'
-                })
-                .done(function(data) {
-                    self.backgrounds = data;
-                    self.build();
-                })
-                .fail(function(xhr, status, error){
-                    throw new Error(error);
-                });
+                        url: settings.backgrounds,
+                        method: 'GET'
+                    })
+                    .done(function(data) {
+                        self.backgrounds = data;
+                        self.build();
+                    })
+                    .fail(function(xhr, status, error) {
+                        throw new Error(error);
+                    });
 
             } else {
                 self.$element.css('background-image', 'url(' + settings.paths.backgrounds + config.data.background + ')');
@@ -52,7 +52,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
         build: function() {
             var self = this;
 
-            if(this.backgrounds) {
+            if (this.backgrounds) {
                 this.backgrounds.forEach(function(bg, i) {
                     var $icoBg = $('<img />').attr('src', settings.paths.backgrounds + 'thumb_' + bg);
 
@@ -68,7 +68,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
 
                     $icoBg.appendTo(self.$backgrounds);
 
-                    if(i === 0) {
+                    if (i === 0) {
                         $icoBg.trigger('click');
                     }
                 });
@@ -81,10 +81,10 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     .attr('src', settings.paths.parts + magnet.img)
                     .data('original', magnet.original)
                     .data('img', magnet.img)
-                    .data('main', magnet.main || false)
+                    .data('main', magnet.main || 0)
                     .addClass('magnet');
 
-                if(!magnet.position) {
+                if (!magnet.position) {
                     $magnet.css({
                         top: (self.dimensions.height / 4) + helpers.randomBetween(-(self.dimensions.height / 6), self.dimensions.height / 6),
                         left: (self.dimensions.width / 4) + helpers.randomBetween(-(self.dimensions.width / 6), self.dimensions.width / 6)
@@ -96,7 +96,7 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     });
                 }
 
-                if(!magnet.class) {
+                if (!magnet.class) {
                     var cl = 'rotate_' + helpers.randomBetween(0, 10);
                     $magnet.addClass(cl);
                     $magnet.data('class', cl);
@@ -104,20 +104,19 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                     $magnet.addClass(magnet.class);
                 }
 
-                if(self.edit) {
+                if (self.edit) {
                     $magnet.draggable({
                         cursor: "move"
                     }).on('dblclick', function() {
-                        if(!magnet.main) {
+                        if (!magnet.main) {
                             $magnet.remove();
                         }
                     });
                 }
 
-                if(magnet.main) {
+                if (+magnet.main) {
                     $magnet.css('box-shadow', 'none');
                 }
-
 
                 $magnet.appendTo(self.$element);
             });
@@ -163,26 +162,26 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
                 payload = this.serialize();
 
             $.ajax({
-                method: 'POST',
-                data: payload
-            })
-            .done(function(data) {
-                var url =  window.location + 's/' + data.id;
+                    method: 'POST',
+                    data: payload
+                })
+                .done(function(data) {
+                    var url = window.location + 's/' + data.id;
 
-                var twitter_share = 'https://twitter.com/home?status=Check out these Paraules from Barcelona ';
-                var facebook_share = 'https://www.facebook.com/sharer/sharer.php?u=';
+                    var twitter_share = 'https://twitter.com/home?status=Check out these Paraules from Barcelona ';
+                    var facebook_share = 'https://www.facebook.com/sharer/sharer.php?u=';
 
 
-                self.$end.find('.url').val(url);
-                self.$end.find('.twitter').attr('href', twitter_share + url);
-                self.$end.find('.facebook').attr('href', facebook_share + url);
-                self.$end.find('.link').attr('href', url);
+                    self.$end.find('.url').val(url);
+                    self.$end.find('.twitter').attr('href', twitter_share + url);
+                    self.$end.find('.facebook').attr('href', facebook_share + url);
+                    self.$end.find('.link').attr('href', url);
 
-                self.$end.fadeIn();
-            })
-            .fail(function(xhr, status, error){
-                throw new Error(error);
-            });
+                    self.$end.fadeIn();
+                })
+                .fail(function(xhr, status, error) {
+                    throw new Error(error);
+                });
         }
     };
 

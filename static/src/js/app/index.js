@@ -62,7 +62,7 @@ require(['jquery', 'game', 'magnets', 'helpers'], function($, game, magnets, hel
 
                         pieces.push({
                             img: 'bcn_150px.png',
-                            main: true
+                            main: 1
                         });
 
                         $game.fadeOut(function() {
