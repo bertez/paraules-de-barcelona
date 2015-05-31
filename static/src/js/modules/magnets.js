@@ -86,8 +86,8 @@ define(['jquery', 'settings', 'helpers', 'jquery-ui'], function($, settings, hel
 
                 if (!magnet.position) {
                     $magnet.css({
-                        top: (self.dimensions.height / 4) + helpers.randomBetween(-(self.dimensions.height / 6), self.dimensions.height / 6),
-                        left: (self.dimensions.width / 4) + helpers.randomBetween(-(self.dimensions.width / 6), self.dimensions.width / 6)
+                        top: (self.dimensions.height / 4) + helpers.randomBetween(-(self.dimensions.height / 4), self.dimensions.height / 4),
+                        left: (self.dimensions.width / 4) + helpers.randomBetween(-(self.dimensions.width / 4), self.dimensions.width / 4)
                     });
                 } else {
                     $magnet.css({

@@ -113,6 +113,7 @@ define(['jquery', 'helpers', 'settings'], function($, helpers, settings) {
             }, 1000);
         },
         finish: function() {
+            clearInterval(this.interval);
             this.$pictures.fadeOut();
             this.$status.fadeOut();
             this.$thanks.fadeIn();
