@@ -2,14 +2,14 @@ var fs = require('fs');
 var path = require('path');
 
 var config = {
-    locale: 'gl',
+    //Mongolab user, pass and url
+    dbuser: '',
+    dbpass: '',
+    dburl: '',
+    locale: 'en',
     path: path.join(__dirname, '..'),
-    database: {
-        protocol: 'sqlite://',
-        file:'db.sqlite'
-    },
     session: {
-        secret: 'SECRET_HERE'
+        secret: 'SESSION_SECRET'
     }
 };
 
