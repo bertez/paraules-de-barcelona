@@ -34,3 +34,14 @@ exports.countitems = function getItem(callback) {
         callback(null, n);
     });
 };
+
+exports.list = function getItem(callback) {
+    var Item = mongoose.model('Item');
+    Item.find({}, function(err, items) {
+        if (err) {
+            console.log(err);
+            return callback(err);
+        }
+        callback(null, items);
+    });
+};

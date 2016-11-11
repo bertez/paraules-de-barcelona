@@ -5,3 +5,4 @@ static/src/vendor
 static/dist
 .sass-cache
 logs
+yarn.lock

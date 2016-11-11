@@ -11,8 +11,8 @@ var routeManager = function(env) {
      */
 
     router.use(function(req, res, next) {
-       res.locals.app = 'Paraules de Barcelona';
-       next();
+        res.locals.app = 'Paraules de Barcelona';
+        next();
     });
 
     /**
@@ -22,6 +22,9 @@ var routeManager = function(env) {
     // Main
     router.get('/', controllers.index);
     router.post('/', controllers.create);
+
+    //List
+    router.get('/list', controllers.list);
 
     // Single
     router.get('/s/:id', controllers.share);
@@ -49,16 +52,19 @@ var routeManager = function(env) {
     router.use(function(err, req, res, next) {
         var status = err.status || 500;
 
-        if(!Array.isArray(err)) {
+        if (!Array.isArray(err)) {
             err = [err];
         }
         res.status(status);
 
         res.render('error', {
-            jsApp: 'error',
+            page: 'simple',
             status: status,
             errors: err,
-            layout: 'simple'
+            layout: 'simple',
+            meta: {
+                title: 'Error: Paraules de Barcelona'
+            }
         });
     });
 

@@ -14,6 +14,7 @@ module.exports = {
     },
     create: function(req, res, next) {
         var content = JSON.stringify(req.body);
+        console.log(content);
         itemd.saveitem(content, function(err, item) {
             if (err) {
                 return next(err);
@@ -40,6 +41,19 @@ module.exports = {
             meta: {
                 title: 'Paraules de Barcelona'
             }
+        });
+    },
+    list: function(req, res, next) {
+        itemd.list(function(err, items) {
+            res.render('list', {
+                page: 'list',
+                items: items,
+                total: items.length,
+                layout: 'simple',
+                meta: {
+                    title: 'List of items: Paraules de Barcelona'
+                }
+            });
         });
     }
 

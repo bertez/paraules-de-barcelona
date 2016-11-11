@@ -20,8 +20,8 @@ module.exports.startServer = function() {
      * Server
      */
 
-    var server = app.listen(port, function() {
-        console.log('App running at %s', app.get('port'));
+    app.listen(port, function() {
+        console.warn('App running at %s', app.get('port'));
     });
 };
 

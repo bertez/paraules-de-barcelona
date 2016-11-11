@@ -145,3 +145,24 @@ footer {
         color: #c7c7c7;
     }
 }
+
+.list {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: visible;
+
+    a {
+        color: white;
+    }
+
+    ol {
+        padding: 0;
+
+        li {
+            display: block;
+            margin: 5px;
+        }
+    }
+
+
+}
